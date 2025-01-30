@@ -1,0 +1,106 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+@forward "../vendors/include-media";
+@forward "../base/helpers";
+@use "sass:color";
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+
+$breakpoints: (
+  "xs-phone": 320px,
+  "phone": 520px,
+  "tablet": 768px,
+  "desktop": 1024px,
+  "laptop": 1480px,
+  "widescreen": 1920px,
+);
+
+// keywords
+$media-expressions: (
+  "screen": "screen",
+  "print": "print",
+  "handheld": "handheld",
+  "landscape": "(orientation: landscape)",
+  "portrait": "(orientation: portrait)",
+  "retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
+  "retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)",
+);
+
+// Color system
+$white: #fff;
+$black: #000;
+$gray: #0003;
+$orange: #f93;
+$yellow: #f8dd91;
+$red: #ff0000;
+$green: #3ccb7f;
+
+// body
+$body-bg: $white;
+$body-color: $black;
+
+// container max width, used for .container element
+$gutter: 15px;
+$container-max-width: 1140px + $gutter * 2;
+
+// link
+$link-color: $orange;
+$link-decoration: none;
+$link-hover-color: color.scale($orange, $lightness: -5%);
+$link-hover-decoration: none;
+
+// border radius
+$rounded-circle: 50%;
+
+// Typography
+// Font, line-height, headings, and more.
+$font-family-sans-serif: "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+$font-family-serif: "Inter", serif;
+$abril-fatface-font: "Abril-Fatface", serif;
+$font-family-sans-serif-secondary: $font-family-sans-serif;
+$font-family-base: $font-family-serif;
+$base-font-path: "../fonts";
+
+$line-height-base: 1.5;
+
+$font-weight-thin: 100;
+$font-weight-ulight: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-heavy: 800;
+$font-weight-black: 900;
+
+$font-sizes: (
+  "sm": 12px,
+  "md": 14px,
+  "base": 16px,
+  "lg": 18px,
+  "xl": 20px,
+);
+
+$headings-sizes: (
+  "h1": 30px,
+  "h2": 26px,
+  "h3": 22px,
+  "h4": 20px,
+  "h5": 18px,
+  "h6": 16px,
+);
+
+$headings-margin-bottom: 1em;
+$headings-font-weight: inherit;
+$headings-line-height: 1.2;
+
+// Paragraphs
+$paragraph-margin-bottom: 1.5em;
+
+// Base transition function
+$transition-duration-base: 0.3s;
+$transition-easing-base: ease-in-out;

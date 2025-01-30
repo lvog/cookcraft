@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the social-networks component.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/variables" as var;
+
+.social-networks {
+  @extend %listreset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  margin: 0 -5px;
+
+  li {
+    padding: 2px 5px;
+  }
+
+  a {
+    font-size: 0;
+    color: var.$black;
+
+    &:hover {
+      color: var.$orange;
+    }
+  }
+
+  i {
+    font-size: 22px;
+  }
+}

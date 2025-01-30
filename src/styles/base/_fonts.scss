@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/mixins" as mix;
+
+@include mix.fontface(Inter, Inter-Regular, 400, normal);
+@include mix.fontface(Inter, Inter-Medium, 500, normal);
+@include mix.fontface(Inter, Inter-Bold, 700, normal);
+@include mix.fontface(Abril-Fatface, AbrilFatface-Regular, 400, normal);

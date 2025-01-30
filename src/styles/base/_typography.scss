@@ -1,0 +1,136 @@
+// -----------------------------------------------------------------------------
+// This file contains typography styles.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "../vendors/icomoon" as icon;
+@use "sass:map";
+
+body {
+  min-width: 375px;
+  color: var.$body-color;
+  font-family: var.$font-family-base;
+  font-size: map.get(var.$font-sizes, "base");
+  line-height: var.$line-height-base;
+  font-weight: var.$font-weight-normal;
+}
+
+a {
+  @include mix.transition(color);
+  color: var.$link-color;
+  text-decoration: var.$link-decoration;
+
+  &:hover {
+    color: var.$link-hover-color;
+    text-decoration: var.$link-hover-decoration;
+  }
+}
+
+ul,
+ol,
+dl,
+p {
+  margin: 0 0 var.$paragraph-margin-bottom;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 0;
+}
+
+h3,
+.h3 {
+  @include var.media(">=tablet") {
+    font-size: 22px;
+  }
+}
+
+.title {
+  display: block;
+  font-size: map.get(var.$font-sizes, "xl");
+  text-align: center;
+}
+
+ul:not([class]):not([id]),
+ol:not([class]):not([id]) {
+  @extend %listreset;
+
+  li {
+    padding-left: 30px;
+    margin-bottom: 10px;
+    position: relative;
+
+    &::before {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      color: var.$white;
+      background: var.$orange;
+      border-radius: var.$rounded-circle;
+      overflow: hidden;
+    }
+  }
+}
+
+ul:not([class]):not([id]) {
+  li {
+    &::before {
+      font-size: 10px;
+      content: icon.$icon-checkmark;
+      font-family: "#{icon.$icomoon-font-family}" !important;
+    }
+  }
+}
+
+ol:not([class]):not([id]) {
+  counter-reset: li;
+
+  li {
+    &::before {
+      content: counters(li, "");
+      counter-increment: li;
+      font-size: 12px;
+    }
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  tr {
+    &:first-child {
+      th {
+        background: var.$yellow;
+      }
+    }
+  }
+
+  th,
+  td {
+    padding: 5px;
+    border-bottom: 1px solid var.$black;
+  }
+}
+
+svg,
+img {
+  max-width: 100%;
+  height: auto;
+}

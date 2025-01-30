@@ -1,0 +1,82 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the popup component.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.popup-holder {
+  @include mix.transition(opacity visibility);
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(var.$gray, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.popup {
+  max-height: calc(100vh - 30px);
+  max-width: 320px;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 15px;
+  background: var.$white;
+  border-radius: 10px;
+  overflow-y: auto;
+
+  @include var.media(">=tablet") {
+    max-width: 450px;
+  }
+
+  .btn-holder {
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+
+  &:hover {
+    &::before,
+    &::after {
+      background: var.$red;
+    }
+  }
+
+  &::before,
+  &::after {
+    @include mix.transition(background);
+    content: "";
+    width: 15px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: var.$black;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}

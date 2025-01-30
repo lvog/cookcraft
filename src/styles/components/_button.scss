@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:color";
+
+.btn {
+  @include mix.transition(color background border-color);
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 150px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+  padding: 10px 15px;
+  text-align: center;
+  color: var.$white;
+  background: var.$orange;
+  border: 2px solid var.$orange;
+  border-radius: 20px;
+  cursor: pointer;
+
+  &.btn-outline {
+    color: var.$black;
+    background: transparent;
+    border-color: var.$black;
+
+    &:hover {
+      color: var.$white;
+      background: var.$black;
+      border-color: var.$black;
+    }
+  }
+
+  &:hover {
+    color: var.$white;
+    background: color.scale(var.$orange, $lightness: -15%);
+    border-color: color.scale(var.$orange, $lightness: -15%);
+  }
+}

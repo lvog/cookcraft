@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/variables" as var;
+
+.footer {
+  padding: 15px 0;
+  text-align: center;
+  color: var.$black;
+  border-top: 1px solid var.$gray;
+
+  @include var.media(">=tablet") {
+    text-align: left;
+  }
+
+  .flex-row {
+    @include var.media(">=tablet") {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 -15px;
+    }
+  }
+
+  .copy,
+  .social-networks {
+    @include var.media(">=tablet") {
+      width: 50%;
+      padding: 0 15px;
+    }
+  }
+
+  .social-networks {
+    @include var.media(">=tablet") {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.copy {
+  display: block;
+  margin-bottom: 10px;
+
+  @include var.media(">=tablet") {
+    margin-bottom: 0;
+  }
+
+  a {
+    font-weight: 700;
+    color: var.$black;
+
+    &:hover {
+      color: var.$orange;
+    }
+  }
+}

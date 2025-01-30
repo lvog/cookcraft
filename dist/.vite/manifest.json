@@ -1,0 +1,147 @@
+{
+  "index-legacy.html": {
+    "file": "js/main-legacy.js",
+    "name": "main",
+    "src": "index-legacy.html",
+    "isEntry": true,
+    "assets": [
+      "img/placeholder.jpg",
+      "fonts/Inter-Regular.woff",
+      "fonts/Inter-Medium.woff",
+      "fonts/Inter-Bold.woff",
+      "fonts/AbrilFatface-Regular.woff",
+      "fonts/icomoon.woff",
+      "img/favicon-96x96.png",
+      "img/favicon.svg",
+      "img/favicon.ico",
+      "img/apple-touch-icon.png",
+      "assets/site.webmanifest",
+      "img/logo.svg",
+      "img/main-img-sm.webp",
+      "img/main-img-md.webp",
+      "img/main-img.webp",
+      "img/main-img-sm.jpg",
+      "img/main-img-md.jpg",
+      "img/main-img.jpg",
+      "img/mexico-flag-img.svg",
+      "img/spain-flag-img.svg"
+    ]
+  },
+  "index.html": {
+    "file": "js/main.js",
+    "name": "main",
+    "src": "index.html",
+    "isEntry": true,
+    "css": [
+      "css/style.css"
+    ],
+    "assets": [
+      "img/placeholder.jpg",
+      "fonts/Inter-Regular.woff",
+      "fonts/Inter-Medium.woff",
+      "fonts/Inter-Bold.woff",
+      "fonts/AbrilFatface-Regular.woff",
+      "fonts/icomoon.woff",
+      "img/favicon-96x96.png",
+      "img/favicon.svg",
+      "img/favicon.ico",
+      "img/apple-touch-icon.png",
+      "assets/site.webmanifest",
+      "img/logo.svg",
+      "img/main-img-sm.webp",
+      "img/main-img-md.webp",
+      "img/main-img.webp",
+      "img/main-img-sm.jpg",
+      "img/main-img-md.jpg",
+      "img/main-img.jpg",
+      "img/mexico-flag-img.svg",
+      "img/spain-flag-img.svg"
+    ]
+  },
+  "src/fonts/AbrilFatface-Regular.woff": {
+    "file": "fonts/AbrilFatface-Regular.woff",
+    "src": "src/fonts/AbrilFatface-Regular.woff"
+  },
+  "src/fonts/Inter-Bold.woff": {
+    "file": "fonts/Inter-Bold.woff",
+    "src": "src/fonts/Inter-Bold.woff"
+  },
+  "src/fonts/Inter-Medium.woff": {
+    "file": "fonts/Inter-Medium.woff",
+    "src": "src/fonts/Inter-Medium.woff"
+  },
+  "src/fonts/Inter-Regular.woff": {
+    "file": "fonts/Inter-Regular.woff",
+    "src": "src/fonts/Inter-Regular.woff"
+  },
+  "src/fonts/icomoon.woff": {
+    "file": "fonts/icomoon.woff",
+    "src": "src/fonts/icomoon.woff"
+  },
+  "src/img/apple-touch-icon.png": {
+    "file": "img/apple-touch-icon.png",
+    "src": "src/img/apple-touch-icon.png"
+  },
+  "src/img/favicon-96x96.png": {
+    "file": "img/favicon-96x96.png",
+    "src": "src/img/favicon-96x96.png"
+  },
+  "src/img/favicon.ico": {
+    "file": "img/favicon.ico",
+    "src": "src/img/favicon.ico"
+  },
+  "src/img/favicon.svg": {
+    "file": "img/favicon.svg",
+    "src": "src/img/favicon.svg"
+  },
+  "src/img/logo.svg": {
+    "file": "img/logo.svg",
+    "src": "src/img/logo.svg"
+  },
+  "src/img/main-img-md.jpg": {
+    "file": "img/main-img-md.jpg",
+    "src": "src/img/main-img-md.jpg"
+  },
+  "src/img/main-img-md.webp": {
+    "file": "img/main-img-md.webp",
+    "src": "src/img/main-img-md.webp"
+  },
+  "src/img/main-img-sm.jpg": {
+    "file": "img/main-img-sm.jpg",
+    "src": "src/img/main-img-sm.jpg"
+  },
+  "src/img/main-img-sm.webp": {
+    "file": "img/main-img-sm.webp",
+    "src": "src/img/main-img-sm.webp"
+  },
+  "src/img/main-img.jpg": {
+    "file": "img/main-img.jpg",
+    "src": "src/img/main-img.jpg"
+  },
+  "src/img/main-img.webp": {
+    "file": "img/main-img.webp",
+    "src": "src/img/main-img.webp"
+  },
+  "src/img/mexico-flag-img.svg": {
+    "file": "img/mexico-flag-img.svg",
+    "src": "src/img/mexico-flag-img.svg"
+  },
+  "src/img/placeholder.jpg": {
+    "file": "img/placeholder.jpg",
+    "src": "src/img/placeholder.jpg"
+  },
+  "src/img/site.webmanifest": {
+    "file": "assets/site.webmanifest",
+    "src": "src/img/site.webmanifest"
+  },
+  "src/img/spain-flag-img.svg": {
+    "file": "img/spain-flag-img.svg",
+    "src": "src/img/spain-flag-img.svg"
+  },
+  "vite/legacy-polyfills-legacy": {
+    "file": "js/polyfills-legacy.js",
+    "name": "polyfills",
+    "src": "vite/legacy-polyfills-legacy",
+    "isEntry": true
+  }
+}

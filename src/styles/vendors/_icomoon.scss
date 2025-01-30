@@ -1,0 +1,144 @@
+@use "../abstracts/variables" as var;
+
+$icomoon-font-family: "icomoon";
+$icomoon-font-path: var.$base-font-path;
+$icomoon-hash: "yuzzw2";
+
+$icon-error: "\e901";
+$icon-time: "\e902";
+$icon-people: "\e903";
+$icon-bookmark-o: "\e904";
+$icon-bookmark: "\e905";
+$icon-checkmark: "\ea10";
+$icon-spinner: "\e982";
+$icon-vegan: "\e900";
+$icon-dairy-free: "\e906";
+$icon-gluten-free: "\e907";
+$icon-search: "\e908";
+$icon-arrow-right: "\ea3c";
+$icon-arrow-left: "\ea40";
+$icon-github: "\eab0";
+$icon-linkedin: "\eaca";
+$icon-filter: "\e909";
+
+@font-face {
+  font-family: "#{$icomoon-font-family}";
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?#{$icomoon-hash}")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"],
+%icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "#{$icomoon-font-family}" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-error {
+  &::before {
+    content: $icon-error;
+  }
+}
+
+.icon-time {
+  &::before {
+    content: $icon-time;
+  }
+}
+
+.icon-people {
+  &::before {
+    content: $icon-people;
+  }
+}
+
+.icon-bookmark {
+  &::before {
+    content: $icon-bookmark;
+  }
+}
+
+.icon-bookmark-o {
+  &::before {
+    content: $icon-bookmark-o;
+  }
+}
+
+.icon-checkmark {
+  &::before {
+    content: $icon-checkmark;
+  }
+}
+
+.icon-spinner {
+  &::before {
+    content: $icon-spinner;
+  }
+}
+
+.icon-vegan {
+  &::before {
+    content: $icon-vegan;
+  }
+}
+
+.icon-dairy-free {
+  &::before {
+    content: $icon-dairy-free;
+  }
+}
+
+.icon-gluten-free {
+  &::before {
+    content: $icon-gluten-free;
+  }
+}
+
+.icon-search {
+  &::before {
+    content: $icon-search;
+  }
+}
+
+.icon-arrow-right {
+  &::before {
+    content: $icon-arrow-right;
+  }
+}
+
+.icon-arrow-left {
+  &::before {
+    content: $icon-arrow-left;
+  }
+}
+
+.icon-github {
+  &::before {
+    content: $icon-github;
+  }
+}
+
+.icon-linkedin {
+  &::before {
+    content: $icon-linkedin;
+  }
+}
+
+.icon-filter {
+  &::before {
+    content: $icon-filter;
+  }
+}

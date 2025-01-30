@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@use "variables" as var;
+@use "sass:list";
+
+// --
+//  @param {$fontfamily} - font family name
+//  @param {$filename} - file name in 'fonts' folder (e.g. my-web-font.woff)
+//  @param {$fontweight} - @default: normal;
+//  @param {$fontstyle} - @default: normal;
+//
+//  NOTE: used only woff, because in supported in all browsers:
+// --
+
+@mixin fontface(
+  $fontfamily,
+  $filename,
+  $fontweight: normal,
+  $fontstyle: normal
+) {
+  @font-face {
+    font-family: $fontfamily;
+    src: url("#{var.$base-font-path}/#{$filename}.woff") format("woff");
+    font-display: swap;
+    font-weight: $fontweight;
+    font-style: $fontstyle;
+  }
+}
+
+/// Transition css properties
+// usage
+// scss - @include transition(color);
+//     or @include transition(color, 1s, ease-in);
+//     or @include transition(color width);
+//     or @include transition(color width, 1s, linear);
+//
+
+@mixin transition(
+  $properties,
+  $duration: var.$transition-duration-base,
+  $easing: var.$transition-easing-base
+) {
+  $list: ();
+  @each $prop in $properties {
+    $str: #{$prop} #{$duration} #{$easing};
+    $list: list.join($list, #{$str}, comma);
+  }
+  transition: $list;
+}
+
+/// Mixin for styling form-placeholders
+/// @example scss - Usage
+///   @include placeholder {
+///    color: #333;
+///   }
+///
+///   input[type='text'],
+///   input[type='tel'],
+///   input[type='email'] {
+///     @include placeholder {
+///      color: red;
+///     }
+///   }
+
+@mixin placeholder {
+  &::placeholder {
+    @content;
+  }
+}
