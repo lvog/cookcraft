@@ -1,7 +1,16 @@
 # CookCraft
 
 CookCraft is a one-page website designed to help you explore, save, and plan meals effortlessly. You can search for a variety of recipes using multiple filters, such as dietary preferences, cuisine type, and calorie count. Save your favorite dishes and get personalized meal plans by calculating your daily calorie intake.
-
+<br>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lvog/lvog.github.io/refs/heads/main/images/cookcraft-img-01.jpg" alt="CookCraft" width="800"/>
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lvog/lvog.github.io/refs/heads/main/images/cookcraft-img-02.jpg" alt="CookCraft" width="800"/>
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lvog/lvog.github.io/refs/heads/main/images/cookcraft.jpg" alt="CookCraft" width="800"/>
+</p>
 CookCraft is built using the **MVC (Model-View-Controller)** architecture and integrates with the [Spoonacular API](https://spoonacular.com/food-api) for recipe data and the [Daily Calorie Intake Calculator](https://www.calories.info/calorie-intake-calculator) to provide accurate, personalized meal plans.
 
 The main inspiration for this project came after completing [The Complete JavaScript Course 2025: From Zero to Expert! by Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/).
