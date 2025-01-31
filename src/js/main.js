@@ -27,8 +27,9 @@ import { controlMenuResults } from "./controllers/controlMenuResults.js";
 import { controlFixedBlock } from "./controllers/controlFixedBlock.js";
 import { controlPopup } from "./controllers/controlPopup.js";
 import { controlSearchQuery } from "./controllers/controlSearchQuery.js";
+import resultsView from "./views/resultsView.js";
 
-const init = () => {
+ready(() => {
   AOS.init();
   preloader.init();
   makeSearch.init();
@@ -38,28 +39,10 @@ const init = () => {
   controlFixedBlock();
   controlPopup();
   controlSearchQuery();
+  resultsView.updateRecipeLinks();
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerAddBookmark(controlAddBookmark);
   bookmarksView.addHandlerRender(controlBookmarks);
   bookmarksView.addHandlerDeleteBookmarks(controlDeleteBookmarks);
   paginationView.addHandlerClick(controlPagination);
-}
-
-init();
-
-// ready(() => {
-//   AOS.init();
-//   preloader.init();
-//   makeSearch.init();
-//   makeSearch.addHandlerSearch(controlSearchResults);
-//   calcMenu.init();
-//   calcMenu.addHandlerClick(controlMenuResults);
-//   controlFixedBlock();
-//   controlPopup();
-//   controlSearchQuery();
-//   recipeView.addHandlerRender(controlRecipes);
-//   recipeView.addHandlerAddBookmark(controlAddBookmark);
-//   bookmarksView.addHandlerRender(controlBookmarks);
-//   bookmarksView.addHandlerDeleteBookmarks(controlDeleteBookmarks);
-//   paginationView.addHandlerClick(controlPagination);
-// })
+})
