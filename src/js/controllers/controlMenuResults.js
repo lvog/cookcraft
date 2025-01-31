@@ -22,6 +22,9 @@ export const controlMenuResults = async function () {
 
     // Load search results
     await model.loadSearchResults(query);
+    
+    // Add search title
+    resultsView.renderSearchTitle(query);
 
     // Render result
     resultsView.render(model.getSearchResultsPage(), query);
