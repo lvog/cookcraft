@@ -83,7 +83,7 @@ npm run build
 
 ----------
 
-❗❗ **IMPORTANT:** Before starting, make sure to register on [Spoonacular API](https://spoonacular.com/food-api) and get your own API key. You need to add it to the ``config.js`` file. In this project, I use the free plan, so please note that the number of requests is limited.
+❗ **IMPORTANT:** Before starting, make sure to register on [Spoonacular API](https://spoonacular.com/food-api) and get your own API key. You need to add it to the ``config.js`` file. In this project, I use the free plan, so please note that the number of requests is limited.
 
 ## License 📄
 Distributed under the MIT License. See  `LICENSE`  for more information.
