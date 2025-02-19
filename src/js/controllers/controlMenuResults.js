@@ -1,5 +1,7 @@
 import * as model from "../model.js";
 
+import { checkImgUrl } from "../helpers/checkImgUrl.js";
+
 import resultsView from "../views/resultsView.js";
 import paginationView from "../views/paginationView.js";
 
@@ -28,6 +30,9 @@ export const controlMenuResults = async function () {
 
     // Render result
     resultsView.render(model.getSearchResultsPage(), query);
+    
+    // Check images (search results)
+    checkImgUrl(".results", ".main-img");
 
     // Render pagination
     paginationView.render(model.state.search);
