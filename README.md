@@ -11,6 +11,7 @@ CookCraft is a one-page website designed to help you explore, save, and plan mea
 <p align="center">
   <img src="https://raw.githubusercontent.com/lvog/lvog.github.io/refs/heads/main/images/cookcraft.jpg" alt="CookCraft" width="800"/>
 </p>
+
 CookCraft is built using the **MVC (Model-View-Controller)** architecture and integrates with the [Spoonacular API](https://spoonacular.com/food-api) for recipe data and the [Daily Calorie Intake Calculator](https://www.calories.info/calorie-intake-calculator) to provide accurate, personalized meal plans.
 
 The main inspiration for this project came after completing [The Complete JavaScript Course 2025: From Zero to Expert! by Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/).
@@ -18,7 +19,7 @@ The main inspiration for this project came after completing [The Complete JavaSc
 ## Technologies 👨🏻‍💻
 
 - **HTML5**
-- **SASS**
+- **SCSS**
 - **Vanilla JavaScript** – Including ES6 features like modules, arrow functions, and async/await.
 - **JavaScript Plugins:**
   - [Headroom.js](https://wicky.nillia.ms/headroom.js/)
@@ -55,6 +56,7 @@ npm install
 ```
 
 For stable operation with this build, it's recommended to use **Node.js version 14.18.0 or above**.
+**I used v20.17.0**.
 To check the current version of Node.js on your machine, run the following command:
 
 ```bash
