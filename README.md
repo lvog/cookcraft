@@ -55,7 +55,7 @@ Once Node.js is installed, run the following command to install the necessary de
 npm install
 ```
 
-For stable operation with this build, it's recommended to use **Node.js version 14.18.0 or above**.
+For stable operation with this build, it's recommended to use **Node.js version 18+ or above**.
 **I used v20.17.0**.
 To check the current version of Node.js on your machine, run the following command:
 
